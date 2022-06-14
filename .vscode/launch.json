@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "runtimeExecutable": "~/.nvm/versions/node/v16.15.1/bin/node",
+      "request": "launch",
+      "name": "Debug Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "cwd": "${workspaceRoot}",
+      "args": ["--i", "--config", "jest.config.ts"],
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    }
+  ]
+}
