@@ -3,6 +3,6 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "EditorConfig.EditorConfig",
-    "firsttris.vscode-jest-runner"
+    "ZixuanChen.vitest-explorer"
   ]
 }

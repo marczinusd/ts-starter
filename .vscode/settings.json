@@ -5,5 +5,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.organizeImports": true
-  }
+  },
+  "vitest.enable": true,
+  "vitest.commandLine": "npm test --",
+  "testing.automaticallyOpenPeekView": "never"
 }
