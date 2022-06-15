@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest run",
+    "test-ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "watch": "vitest",
     "lint": "eslint . --ext .ts",
@@ -24,6 +25,7 @@
     "@tsconfig/node16": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
+    "@vitest/ui": "^0.15.1",
     "commitizen": "^4.2.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
