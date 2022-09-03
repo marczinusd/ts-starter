@@ -19,22 +19,22 @@
   "author": "David Marczinus",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@commitlint/prompt": "^17.0.0",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/prompt": "^17.1.2",
     "@tsconfig/node16": "^1.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "@vitest/ui": "^0.15.1",
-    "commitizen": "^4.2.4",
-    "eslint": "^8.17.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitest/ui": "^0.22.1",
+    "commitizen": "^4.2.5",
+    "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
-    "prettier": "2.6.2",
-    "typescript": "^4.7.3",
-    "vitest": "^0.15.1"
+    "prettier": "2.7.1",
+    "typescript": "^4.8.2",
+    "vitest": "^0.22.1"
   },
   "dependencies": {
-    "fp-ts": "^2.12.1"
+    "fp-ts": "^2.12.3"
   }
 }
