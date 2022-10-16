@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run",
+    "test": "vitest",
+    "bench": "vitest bench",
     "test-ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "watch": "vitest",
+    "test-run": "vitest run",
     "lint": "eslint . --ext .ts",
     "prepare": "husky install"
   },
@@ -23,16 +24,17 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@commitlint/prompt": "^17.1.2",
     "@tsconfig/node16": "^1.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
-    "@vitest/ui": "^0.22.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "@vitest/coverage-c8": "^0.24.3",
+    "@vitest/ui": "^0.24.3",
     "commitizen": "^4.2.5",
-    "eslint": "^8.23.0",
+    "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "prettier": "2.7.1",
-    "typescript": "^4.8.2",
-    "vitest": "^0.22.1"
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.3"
   },
   "dependencies": {
     "fp-ts": "^2.12.3"
