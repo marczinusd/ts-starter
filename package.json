@@ -10,6 +10,7 @@
     "coverage": "vitest run --coverage",
     "test-run": "vitest run",
     "lint": "eslint . --ext .ts",
+    "prettier": "prettier --write .",
     "prepare": "husky install"
   },
   "config": {
