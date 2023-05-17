@@ -21,6 +21,12 @@
       "path": "@commitlint/prompt"
     }
   },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "author": "David Marczinus",
   "license": "ISC",
   "devDependencies": {
@@ -37,6 +43,7 @@
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
     "tsc-alias": "^1.8.6",
     "typescript": "^5.0.4",
