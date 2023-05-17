@@ -11,10 +11,14 @@
     "allowSyntheticDefaultImports": true,
     "preserveConstEnums": true,
     "paths": {
-      "@/model/*": ["./src/model/*"],
+      "@model/*": ["./src/model/*"],
       "*": ["node_modules/*", "src/types/*"]
     },
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+
+    // strict mode settings
+    "strict": true,
+    "noImplicitAny": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

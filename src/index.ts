@@ -1,5 +1,5 @@
+import { Bla } from '@model/someModule';
 import { hello } from './hello/hello';
-import { Bla } from './model/someModule';
 
 const bla = new Bla();
 bla.doIt();
