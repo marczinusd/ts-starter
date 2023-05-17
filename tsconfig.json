@@ -1,9 +1,19 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es2022",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "preserveConstEnums": true,
+    "paths": {
+      "@/model/*": ["./src/model/*"],
+      "*": ["node_modules/*", "src/types/*"]
+    },
     "types": ["vitest/globals"]
   },
   "include": ["src/**/*"],
