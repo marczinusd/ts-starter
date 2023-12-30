@@ -4,5 +4,9 @@ export default defineConfig({
   test: {
     globals: true,
     reporters: ['verbose'],
+    coverage: {
+      all: true,
+      exclude: ['**/*.bench.ts']
+    },
   },
 });
