@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "test:watch:coverage": "vitest --coverage",
     "lint": "eslint . --ext .ts",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky"
   },
   "config": {
     "commitizen": {
