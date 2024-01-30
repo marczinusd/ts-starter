@@ -1,4 +1,4 @@
-import { Bla } from '@model/someModule';
+import { Bla } from '@/model/someModule';
 import { hello } from './hello/hello';
 
 const bla = new Bla();

@@ -17,11 +17,6 @@
     "prettier": "prettier --write .",
     "prepare": "husky"
   },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/prompt"
-    }
-  },
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
@@ -42,7 +37,6 @@
     "@typescript-eslint/parser": "^6.19.1",
     "@vitest/coverage-v8": "^1.2.1",
     "@vitest/ui": "^1.2.1",
-    "commitizen": "^4.3.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -54,6 +48,7 @@
     "vitest": "^1.2.1"
   },
   "dependencies": {
-    "fp-ts": "^2.16.2"
+    "fp-ts": "^2.16.2",
+    "mutative": "^1.0.3"
   }
 }
