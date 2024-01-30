@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc && tsc-alias && node dist/index.js",
-    "build": "tsc && tsc-alias",
+    "build": "node esbuild.mjs",
+    "build:prod": "node esbuild.mjs --prod",
+    "compile": "tsc && tsc-alias",
     "build:watch": "concurrently --kill-others \"tsc -w\" \"tsc-alias -w\"",
     "test": "vitest run",
     "bench": "vitest bench",
