@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "EditorConfig.EditorConfig",
-    "vitest.explorer"
+    "vitest.explorer",
+    "oven.bun-vscode"
   ]
 }

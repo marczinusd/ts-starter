@@ -8,6 +8,30 @@
       "program": "${workspaceFolder}/src/index.ts",
       "preLaunchTask": "npm: build",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "Debug Bun",
+
+      // The path to a JavaScript or TypeScript file to run.
+      "program": "${file}",
+
+      // The arguments to pass to the program, if any.
+      "args": [],
+
+      // The working directory of the program.
+      "cwd": "${workspaceFolder}",
+
+      // The environment variables to pass to the program.
+      "env": {},
+
+      // The path to the `bun` executable, defaults to your `PATH` environment variable.
+      "runtime": "bun",
+
+      // The arguments to pass to the `bun` executable, if any.
+      // Unlike `args`, these are passed to the executable itself, not the program.
+      "runtimeArgs": []
     }
   ]
 }
