@@ -6,7 +6,5 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
-  "vitest.enable": true,
-  "vitest.commandLine": "npm test --",
   "testing.automaticallyOpenPeekView": "never"
 }
