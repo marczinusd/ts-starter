@@ -4,9 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && tsc-alias && node dist/index.js",
-    "build": "node esbuild.mjs",
-    "build:prod": "node esbuild.mjs --prod",
+    "start": "bun run build && bun dist/index.js",
+    "build": "bun build ./src/index.ts --outdir dist",
     "compile": "tsc && tsc-alias",
     "build:watch": "concurrently --kill-others \"tsc -w\" \"tsc-alias -w\"",
     "test": "vitest run",
@@ -31,26 +30,27 @@
   "author": "David Marczinus",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
-    "@commitlint/prompt": "^18.6.0",
-    "@tsconfig/node20": "^20.1.2",
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
-    "@vitest/coverage-v8": "^1.2.2",
-    "@vitest/ui": "^1.2.2",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/prompt": "^19.3.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "@vitest/coverage-v8": "^1.5.3",
+    "@vitest/ui": "^1.5.3",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.7",
-    "lint-staged": "^15.2.0",
-    "prettier": "3.2.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
     "tsc-alias": "^1.8.8",
-    "typescript": "^5.3.3",
-    "vitest": "^1.2.2"
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.3"
   },
   "dependencies": {
-    "fp-ts": "^2.16.2",
-    "mutative": "^1.0.3"
+    "effect": "^3.1.0",
+    "fp-ts": "^2.16.5",
+    "mutative": "^1.0.5"
   }
 }
