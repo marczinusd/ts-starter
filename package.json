@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "packageManager": "bun@1.1.5",
   "scripts": {
-    "start": "bun run build && bun dist/index.js",
+    "start": "bun ./src/index.ts",
     "build": "bun build ./src/index.ts --outdir dist --sourcemap=external",
     "build:prod": "bun build ./src/index.ts --outdir dist --minify",
     "compile": "tsc && tsc-alias",
@@ -17,7 +18,8 @@
     "test:watch:coverage": "vitest --coverage",
     "lint": "eslint . --ext .ts",
     "prettier": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "watch": "bun --watch ./src/index.ts"
   },
   "lint-staged": {
     "*.ts": [
@@ -33,25 +35,25 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@commitlint/prompt": "^19.3.0",
+    "@commitlint/prompt": "^19.3.1",
     "@tsconfig/node20": "^20.1.4",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
-    "@vitest/coverage-v8": "^1.5.3",
-    "@vitest/ui": "^1.5.3",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "@vitest/coverage-v8": "^2.0.4",
+    "@vitest/ui": "^2.0.4",
     "concurrently": "^8.2.2",
-    "eslint": "^8.56.0",
+    "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "3.2.5",
-    "tsc-alias": "^1.8.8",
-    "typescript": "^5.4.5",
-    "vitest": "^1.5.3"
+    "husky": "^9.1.2",
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.3",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.4"
   },
   "dependencies": {
-    "effect": "^3.1.0",
-    "fp-ts": "^2.16.5",
-    "mutative": "^1.0.5"
+    "effect": "^3.5.8",
+    "fp-ts": "^2.16.9",
+    "mutative": "^1.0.7"
   }
 }
