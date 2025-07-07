@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
+  "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
     "target": "es2022",
     "module": "CommonJS",
@@ -12,14 +12,14 @@
     "preserveConstEnums": true,
     "paths": {
       "@/model/*": ["./src/model/*"],
-      "*": ["node_modules/*", "src/types/*"],
+      "*": ["node_modules/*", "src/types/*"]
     },
     "types": ["vitest/globals"],
 
     // strict mode settings
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
